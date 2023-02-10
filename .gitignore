@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# 변경된 파일에 대해서만 lint 검사
+.eslintcache
+
+.env
