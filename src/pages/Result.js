@@ -2,6 +2,7 @@ import React from 'react';
 import ResultScore from '../components/ResultScore';
 import Child from '../components/Child';
 import Adult from '../components/Adult';
+import ResultType from '../components/ResultType';
 
 function Result() {
   let resultAge = 0;
@@ -14,6 +15,7 @@ function Result() {
   return (
     <div style={{ width: '500px', margin: '0 auto', textAlign: 'center' }}>
       <ResultScore resultType={resultType} />
+      <ResultType resultType={resultType} />
       {ageChecker ? <Child /> : <Adult />}
     </div>
   );

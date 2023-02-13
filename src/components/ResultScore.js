@@ -24,7 +24,10 @@ const ResultScore = ({ resultType }) => {
       <div
         style={{
           marginTop: '100px',
-          padding: '20px 0',
+          paddingTop: '10px',
+          paddingBottom: '30px',
+          // border: '10px solid beige',
+          // borderRadius: '5px',
         }}
       >
         <h1
