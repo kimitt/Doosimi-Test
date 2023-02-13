@@ -1,10 +1,13 @@
 import React from 'react';
-import RandomScore from '../components/RandomScore';
+import ResultScore from '../components/ResultScore';
 
 function Result() {
+  let resultAge = 1;
+  let resultType = 'A';
+
   return (
     <div>
-      <RandomScore />
+      <ResultScore resultType={resultType} />
     </div>
   );
 }
