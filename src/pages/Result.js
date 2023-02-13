@@ -4,6 +4,7 @@ import Child from '../components/Child';
 import Adult from '../components/Adult';
 import ResultType from '../components/ResultType';
 import ResultShare from '../components/ResultShare';
+import TestRetryButton from '../components/TestRetryButton';
 
 function Result() {
   let resultAge = 1;
@@ -19,6 +20,7 @@ function Result() {
       <ResultType resultType={resultType} />
       {ageChecker ? <Child /> : <Adult />}
       <ResultShare />
+      <TestRetryButton />
     </div>
   );
 }
