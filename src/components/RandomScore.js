@@ -14,7 +14,6 @@ const RandomScore = () => {
     <div>
       <div>start resultRandom</div>
       <div>{resultRandom}</div>
-      <div>result</div>
       <div>{result}</div>
     </div>
   );
