@@ -5,7 +5,7 @@ import Adult from '../components/Adult';
 import ResultType from '../components/ResultType';
 
 function Result() {
-  let resultAge = 0;
+  let resultAge = 1;
   let ageChecker = true; // 유아(0)인 경우 true
   let resultType = 'A';
   if (resultAge !== 0) {

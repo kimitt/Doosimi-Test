@@ -36,7 +36,7 @@ const ResultScore = ({ resultType }) => {
             fontWeight: '800',
           }}
         >
-          나의 프로그래밍 적합도는?
+          나의 개발자 적합도는?
         </h1>
         <div>
           <div
