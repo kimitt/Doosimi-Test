@@ -3,6 +3,7 @@ import ResultScore from '../components/ResultScore';
 import Child from '../components/Child';
 import Adult from '../components/Adult';
 import ResultType from '../components/ResultType';
+import ResultShare from '../components/ResultShare';
 
 function Result() {
   let resultAge = 1;
@@ -17,6 +18,7 @@ function Result() {
       <ResultScore resultType={resultType} />
       <ResultType resultType={resultType} />
       {ageChecker ? <Child /> : <Adult />}
+      <ResultShare />
     </div>
   );
 }
