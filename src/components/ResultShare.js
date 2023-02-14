@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from '../components/Modal';
+import KakaoShare from './kakaoLink';
 
 const ResultShare = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
   return (
-    <div>
-      <h3>내 결과 공유하기!</h3>
-      <div></div>
-      <div></div>
+    <div className="result-share">
+      <button onClick={openModal}>내 결과 공유하기!</button>
+      <Modal open={modalOpen} close={closeModal}>
+        <KakaoShare />
+        <KakaoShare />
+      </Modal>
     </div>
   );
 };

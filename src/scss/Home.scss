@@ -1,0 +1,63 @@
+@import './mixin';
+
+$bg-color: rgba(254, 255, 205, 1);
+
+.container {
+  background-color: $bg-color;
+  width: 100vw;
+  height: 100vh;
+  .home-container {
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+  }
+  .main-img {
+    position: absolute;
+    top: 0;
+    img {
+      width: 100%;
+    }
+  }
+  .button-img {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    img {
+      width: 100%;
+      position: absolute;
+      bottom: 40px;
+    }
+  }
+  .team-info a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-family: 'HSYuji-Regular';
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+  }
+}
+
+// 미디어쿼리
+@include mobile {
+  .container {
+    height: 750px;
+  }
+}
+
+@include tablet {
+  .container {
+    height: 800px;
+  }
+}
+
+// @include desktop {
+// }

@@ -1,4 +1,5 @@
 import { collection, onSnapshot, query } from 'firebase/firestore';
+<<<<<<< Updated upstream
 import React, { useEffect, useRef, useState } from 'react';
 import { dbFirestore } from '../fbase';
 
@@ -31,6 +32,13 @@ function Quiz({ getData }) {
       navigate('/result');
     }
   }, [c, a, b]);
+=======
+import React, { useEffect, useState } from 'react';
+import { dbFirestore } from '../fbase';
+
+function Quiz() {
+  const [quiz, setQuiz] = useState([]);
+>>>>>>> Stashed changes
 
   useEffect(() => {
     const q = query(collection(dbFirestore, 'quiz'));
@@ -41,6 +49,7 @@ function Quiz({ getData }) {
         id: document.id,
       }));
 
+<<<<<<< Updated upstream
       setquiz(quizArr);
     });
   }, []);
@@ -167,6 +176,14 @@ function Quiz({ getData }) {
       })}
     </>
   );
+=======
+      console.log(quizArr);
+      setQuiz(quizArr);
+    });
+  }, []);
+
+  return <div>Quizedfdf</div>;
+>>>>>>> Stashed changes
 }
 
 export default Quiz;

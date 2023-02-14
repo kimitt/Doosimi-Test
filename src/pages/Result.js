@@ -5,6 +5,8 @@ import Adult from '../components/Adult';
 import ResultType from '../components/ResultType';
 import ResultShare from '../components/ResultShare';
 import TestRetryButton from '../components/TestRetryButton';
+import '../scss/Result.scss';
+import '../components/kakaoLink';
 
 function Result() {
   let resultAge = 1;
@@ -15,7 +17,14 @@ function Result() {
   }
 
   return (
-    <div style={{ width: '500px', margin: '0 auto', textAlign: 'center' }}>
+    <div
+      style={{
+        width: '500px',
+        margin: '0 auto',
+        textAlign: 'center',
+        fontFamily: 'HSYuji-Regular',
+      }}
+    >
       <ResultScore resultType={resultType} />
       <ResultType resultType={resultType} />
       {ageChecker ? <Child /> : <Adult />}
