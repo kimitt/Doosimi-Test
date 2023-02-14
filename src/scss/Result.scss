@@ -1,0 +1,177 @@
+//Adult
+.adult-container {
+  width: 500px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .adult-button-life {
+    width: 100%;
+    font-size: 1.2rem;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    a {
+      height: 50px;
+      padding: 20px 0;
+      position: absolute;
+      top: 43px;
+      left: 50px;
+      right: 50px;
+      text-decoration: none;
+      color: black;
+      img {
+        position: absolute;
+        top: 0px;
+        bottom: 20px;
+        left: 10px;
+      }
+    }
+  }
+  .adult-button-oz {
+    width: 100%;
+    font-size: 1.2rem;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    a {
+      height: 40px;
+      padding: 20px 0 15px 0;
+      position: absolute;
+      top: 22px;
+      left: 50px;
+      right: 50px;
+      text-decoration: none;
+      color: black;
+      img {
+        position: absolute;
+        top: 0px;
+        bottom: 20px;
+        left: 10px;
+      }
+    }
+  }
+}
+
+// Result Share
+.result-share {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  button {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 3px solid black;
+    text-align: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'HSYuji-Regular';
+    background-color: rgba(176, 210, 112, 1);
+  }
+}
+
+// Test Retry
+
+.test-retry {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  button {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 3px solid black;
+    text-align: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'HSYuji-Regular';
+    background-color: rgb(255, 127, 101);
+  }
+}
+
+// modal
+.modal {
+  display: none;
+  position: fixed;
+  top: 250px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  .modal-section {
+    width: 90%;
+    max-width: 450px;
+    margin: 0 auto;
+    border-radius: 0.3rem;
+
+    /* 팝업이 열릴때 스르륵 열리는 효과 */
+    animation: modal-show 0.3s;
+    overflow: hidden;
+    .close-button {
+      width: 30px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #000000;
+      background-color: transparent;
+    }
+    button {
+      outline: none;
+      cursor: pointer;
+      border: 0;
+    }
+    main {
+      padding: 20px;
+      border-bottom: 1px solid #dee2e6;
+      border-top: 1px solid #dee2e6;
+    }
+  }
+}
+
+.openModal {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  /* 팝업이 열릴때 스르륵 열리는 효과 */
+  animation: modal-bg-show 0.3s;
+}
+
+// Result type
+.result-type {
+  .result-box {
+    padding: 15px 0 20px 0;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: rgb(244, 225, 255);
+    h3 {
+      font-size: 1.2rem;
+      font-family: 'TmoneyRoundWindExtraBold';
+    }
+    .result-detail {
+      padding: 0 30px;
+      font-size: 0.9rem;
+      font-family: 'TmoneyRoundWindExtraBold';
+    }
+  }
+}

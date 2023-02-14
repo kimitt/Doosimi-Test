@@ -1,43 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import buttonImgOne from '../assets/answer-1.png';
+import buttonImgTwo from '../assets/answer-2.png';
 
 const Adult = () => {
   return (
-    <div
-      style={{
-        width: '400px',
-        margin: '0 auto',
-      }}
-    >
-      <div>
+    <div className="adult-container">
+      <div className="adult-button-life">
         <Link to="https://lifehacking.co.kr">
-          <button // 버튼들 클래스로 처리하기
-            style={{
-              marginTop: '30px',
-              width: '100%',
-              fontSize: '16px',
-              height: '40px',
-              borderRadius: '10px',
-            }}
-          >
-            개발로 창업을 하고 싶다면?
-          </button>
+          {/* 버튼들 클래스로 처리하기 */}
+          개발로 창업을 하고 싶다면?
         </Link>
+        <img src={buttonImgOne} alt="button" />
       </div>
-      <div>
+      <div className="adult-button-oz">
         <Link to="https://ozcodingschool.com">
-          <button
-            style={{
-              marginTop: '30px',
-              width: '100%',
-              fontSize: '16px',
-              height: '40px',
-              borderRadius: '10px',
-            }}
-          >
-            스타트업 개발자로 성장하고 싶다면?
-          </button>
+          스타트업 개발자로 성장하고 싶다면?
         </Link>
+        <img src={buttonImgTwo} alt="button" />
       </div>
     </div>
   );
