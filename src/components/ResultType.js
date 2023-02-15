@@ -73,7 +73,7 @@ const ResultType = ({ resultType }) => {
       break;
   }
   // test
-  num = 0;
+  // num = 0;
 
   let title = resultMsg[num].title;
   let content = resultMsg[num].content;
