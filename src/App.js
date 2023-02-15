@@ -5,7 +5,7 @@ import Quiz from './pages/Quiz';
 import Result from './pages/Result';
 import TeamPage from './pages/TeamPage';
 import { useState } from 'react';
-
+import Loading from './pages/Loading';
 function App() {
   const [datas, setdatas] = useState();
   const [maxData, setMaxData] = useState('');
@@ -30,6 +30,7 @@ function App() {
           path="/result"
           element={<Result maxData={maxData} age={age} />}
         />
+        <Route path="/loading" element={<Loading />} />
       </Routes>
     </BrowserRouter>
   );

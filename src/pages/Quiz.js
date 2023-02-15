@@ -26,7 +26,7 @@ function Quiz({ getData }) {
   // //데이터 받아오기
   useEffect(() => {
     if (a.length + b.length + c.length === 9) {
-      navigate('/result');
+      navigate('/loading');
     }
   }, [c, a, b]);
 
@@ -51,7 +51,6 @@ function Quiz({ getData }) {
   // }, [pickArray]);
   // //length를 배열에 담고, maxLength 선정해서 App.js로 보내주기
   useEffect(() => {
-    console.log(progress);
     setProgress((hello) => [0, ...hello]);
   }, [count]);
   const handleSubmit = (e) => {
@@ -128,8 +127,8 @@ function Quiz({ getData }) {
                 </div>
                 <div className="heart-up-container">
                   <div className="heart-container">
-                    {progress.map((_, index) => (
-                      <Heart key={index} />
+                    {quiz.map((_, index) => (
+                      <Heart index={index} count={count} />
                     ))}
                   </div>
                 </div>
