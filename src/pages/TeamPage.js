@@ -1,6 +1,9 @@
 import React from 'react';
 import '../scss/Team.scss';
-import kimiImg from '../assets/logo.png';
+import kimiImg from '../assets/kimi.jpg';
+import sbImg from '../assets/sn.jpg';
+import ytImg from '../assets/yt.jpg';
+
 function TeamPage() {
   return (
     <div className="team-container">
@@ -11,40 +14,30 @@ function TeamPage() {
         <div className="team-info-box">
           <div className="team-info">
             <img src={kimiImg} alt="kimi" />
-            <p style={{ fontSize: '1.5rem' }}>kimi</p>
+            <p className="team-name">kimi</p>
             <p>백엔드도 디자인도 재미있는</p>
             <p>프론트 개발자</p>
             <a href="https://github.com/kimitt" target="_blank">
               github 바로가기
             </a>
           </div>
-          <div>
-            <div>
-              {' '}
-              <div className="team-info">
-                <img src={kimiImg} alt="kimi" />
-                <p style={{ fontSize: '1.5rem' }}>kimi</p>
-                <p>백엔드도 디자인도 재미있는</p>
-                <p>프론트 개발자</p>
-                <a href="https://github.com/kimitt" target="_blank">
-                  github 바로가기
-                </a>
-              </div>
-            </div>
+          <div className="team-info">
+            <img src={sbImg} alt="subin" />
+            <p className="team-name">수빈</p>
+            <p>백엔드도 디자인도 재미있는</p>
+            <p>프론트 개발자</p>
+            <a href="https://github.com/blairMoon" target="_blank">
+              github 바로가기
+            </a>
           </div>
-          <div>
-            <div>
-              {' '}
-              <div className="team-info">
-                <img src={kimiImg} alt="kimi" />
-                <p style={{ fontSize: '1.5rem' }}>kimi</p>
-                <p>백엔드도 디자인도 재미있는</p>
-                <p>프론트 개발자</p>
-                <a href="https://github.com/kimitt" target="_blank">
-                  github 바로가기
-                </a>
-              </div>
-            </div>
+          <div className="team-info">
+            <img src={ytImg} alt="yoontae" />
+            <p className="team-name">윤태</p>
+            <p>백엔드도 디자인도 재미있는</p>
+            <p>프론트 개발자</p>
+            <a href="https://github.com/yesaroun" target="_blank">
+              github 바로가기
+            </a>
           </div>
         </div>
       </div>
