@@ -40,13 +40,13 @@ const ResultType = ({ resultType }) => {
   let num = 0;
 
   switch (resultType) {
-    case 'A':
+    case 'a':
       num = 0;
       break;
-    case 'B':
+    case 'b':
       num = 1;
       break;
-    case 'C':
+    case 'c':
       num = 2;
       break;
   }

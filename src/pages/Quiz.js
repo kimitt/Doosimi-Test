@@ -115,7 +115,7 @@ function Quiz({ getData }) {
                       onChange={(e) => {
                         putValue1(index, e.target.value);
                       }}
-                      value="주민등록증있음"
+                      value="T"
                       type="radio"
                       name="answer"
                       id="1"
@@ -127,7 +127,7 @@ function Quiz({ getData }) {
                       onChange={(e) => {
                         putValue2(index, e.target.value);
                       }}
-                      value="주민등록증 없음"
+                      value="F"
                       type="radio"
                       name="answer"
                       id="2"
