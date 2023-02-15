@@ -201,6 +201,16 @@
 
 // Result type
 .result-type {
+  .result-img {
+    background-image: url("../assets/result-title.png");
+    background-position: center;
+    background-size: 550px;
+    height: 200px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .title {
     font-size: 1.3rem;
     font-family: 'TmoneyRoundWindExtraBold';
@@ -234,7 +244,7 @@
       }
     }
     .result-type-img {
-      width: 100%;
+      width: 300px;
     }
   }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import r1Img from '../assets/result-1.png';
 import r2Img from '../assets/result-2.png';
 import r3Img from '../assets/result-3.png';
+import titleImg from '../assets/result-title.png';
 
 const ResultType = ({ resultType }) => {
   const resultMsg = {
@@ -80,7 +81,10 @@ const ResultType = ({ resultType }) => {
 
   return (
     <div className="result-type">
-      <h3 className="title">{title}</h3>
+      <div className="result-img">
+        <h3 className="title">{title}</h3>
+      </div>
+
       <div>
         <img className="result-type-img" src={resultImg} alt="resultImg" />
       </div>
