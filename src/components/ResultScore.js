@@ -45,7 +45,7 @@ const ResultScore = ({ resultType }) => {
             color: 'orange',
           }}
         >
-          80
+          {scoreResult}
           <span
             style={{
               fontSize: '4rem',
