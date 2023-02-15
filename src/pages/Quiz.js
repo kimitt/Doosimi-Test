@@ -6,8 +6,6 @@ import { dbFirestore } from '../fbase';
 import '../scss/Quiz.scss';
 import { useNavigate } from 'react-router-dom';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 function Quiz({ getData }) {
   const [quiz, setquiz] = useState([]);
   const [count, setCount] = useState(0);
@@ -29,7 +27,6 @@ function Quiz({ getData }) {
     }
   }, [c, a, b]);
 
-
   useEffect(() => {
     const q = query(collection(dbFirestore, 'quiz'));
 
@@ -38,7 +35,6 @@ function Quiz({ getData }) {
         ...document.data(),
         id: document.id,
       }));
-
 
       setquiz(quizArr);
     });
@@ -146,8 +142,6 @@ function Quiz({ getData }) {
       })}
     </>
   );
-
-
 }
 
 export default Quiz;
