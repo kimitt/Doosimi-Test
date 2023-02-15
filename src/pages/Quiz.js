@@ -118,7 +118,7 @@ function Quiz({ getData }) {
         if (count === index) {
           return (
             // eslint-disable-next-line react/jsx-no-useless-fragment
-            <>
+            <div className="high-div">
               <div className="whole-container">
                 <div className="title-container">
                   <div className="real-container">
@@ -171,7 +171,7 @@ function Quiz({ getData }) {
                   </div>
                 </div>
               </div>
-            </>
+            </div>
           );
         }
       })}
