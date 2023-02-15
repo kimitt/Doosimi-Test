@@ -20,14 +20,7 @@ function Result({ maxData, age }) {
   }
 
   return (
-    <div
-      style={{
-        width: '500px',
-        margin: '0 auto',
-        textAlign: 'center',
-        fontFamily: 'HSYuji-Regular',
-      }}
-    >
+    <div className="result">
       <ResultScore resultType={maxData} />
       <ResultType resultType={maxData} />
       {ageChecker ? <Adult /> : <Child />}
