@@ -1,12 +1,20 @@
 import React from 'react';
 import '../scss/Quiz.scss';
-const Heart = () => {
+const Heart = ({ index, count }) => {
   return (
-    <img
-      className="heart"
-      src="https://cdn.crowdpic.net/detail-thumb/thumb_d_5C18EFB1EF92DF6EB7E54728AFD30B35.png"
-    />
+    <>
+      <img
+        className="heart"
+        src={
+          index <= count
+            ? 'https://ifh.cc/g/5odbNO.png'
+            : 'https://ifh.cc/g/kWZTGo.png'
+        }
+      />
+    </>
   );
 };
 
 export default Heart;
+//https://ifh.cc/g/5odbNO.png 하트잇는거
+//https://ifh.cc/g/kWZTGo.png 하트없는거
