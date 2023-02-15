@@ -36,21 +36,21 @@ const Child = () => {
         </Link>
         <img src={buttonImgTwo} alt="button" />
       </div>
-      <div className="adult-button-life">
-        <Link to="https://jrcodingac.kr">
-          최고의 선생님과 코딩 교육을 받으러 가기!
-          {/*<button*/}
-          {/*  style={{*/}
-          {/*    marginTop: '30px',*/}
-          {/*    width: '100%',*/}
-          {/*    fontSize: '16px',*/}
-          {/*    height: '40px',*/}
-          {/*    borderRadius: '10px',*/}
-          {/*  }}*/}
-          {/*></button>*/}
-        </Link>
-        <img src={buttonImgOne} alt="button" />
-      </div>
+      {/*<div className="adult-button-life">*/}
+      {/*  <Link to="https://jrcodingac.kr">*/}
+      {/*    최고의 선생님과 코딩 교육을 받으러 가기!*/}
+      {/*    /!*<button*!/*/}
+      {/*    /!*  style={{*!/*/}
+      {/*    /!*    marginTop: '30px',*!/*/}
+      {/*    /!*    width: '100%',*!/*/}
+      {/*    /!*    fontSize: '16px',*!/*/}
+      {/*    /!*    height: '40px',*!/*/}
+      {/*    /!*    borderRadius: '10px',*!/*/}
+      {/*    /!*  }}*!/*/}
+      {/*    /!*></button>*!/*/}
+      {/*  </Link>*/}
+      {/*  <img src={buttonImgOne} alt="button" />*/}
+      {/*</div>*/}
     </div>
   );
 };

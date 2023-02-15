@@ -90,12 +90,7 @@ const ResultType = ({ resultType }) => {
         <div className="result-box">
           <div className="result-detail">
             {content.split('\n').map((line) => {
-              return (
-                <span>
-                  {line}
-                  <br />
-                </span>
-              );
+              return <p className="result-detail-text">{line}</p>;
             })}
           </div>
         </div>
@@ -105,12 +100,7 @@ const ResultType = ({ resultType }) => {
         <div className="result-box">
           <div className="result-detail">
             {devType.split('\n').map((line) => {
-              return (
-                <span>
-                  {line}
-                  <br />
-                </span>
-              );
+              return <p className="result-detail-text">{line}</p>;
             })}
           </div>
         </div>
