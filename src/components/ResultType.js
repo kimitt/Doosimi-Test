@@ -2,18 +2,19 @@ import React from 'react';
 import r1Img from '../assets/result-1.png';
 import r2Img from '../assets/result-2.png';
 import r3Img from '../assets/result-3.png';
+import titleImg from '../assets/result-title.png';
 
 const ResultType = ({ resultType }) => {
   const resultMsg = {
     0: {
-      title: 'HW와 SW를 모두 아우르며 데이터 분석에 능한 개발자',
+      title: '데이터 분석에 능한 개발자',
       content:
         '현실적이고 신중하며 성실한 성격을 가진 당신!!\n\n' +
         '정해진 원칙과 계획에 따라\n 분명하고, 체계적으로 일하기를 좋아하는군요.\n\n' +
         '그래서 기계를 조작하거나, \n계산적인 능력을 발휘하는데 흥미가 있겠네요!',
     },
     1: {
-      title: '원활한 협업을 이끌면서 창의적인 생각을 지닌 개발자',
+      title: '협업을 즐기며 창의적인 생각을 지닌 개발자',
       content:
         '창조적이고 변화를 선호하면서도 타인에 대한 이해심이 많은 당신!!\n\n' +
         '새로운 아이디어를 생각하고\n 타인을 위한 사회적 서비스를 제공하는 일을 좋아하는군요.\n\n' +
@@ -55,7 +56,7 @@ const ResultType = ({ resultType }) => {
   let resultImg;
 
   // test
-  // resultType = 'c';
+  //resultType = 'c';
 
   switch (resultType) {
     case 'a':
@@ -72,7 +73,7 @@ const ResultType = ({ resultType }) => {
       break;
   }
   // test
-  // num = 2;
+  // num = 0;
 
   let title = resultMsg[num].title;
   let content = resultMsg[num].content;
@@ -80,10 +81,12 @@ const ResultType = ({ resultType }) => {
 
   return (
     <div className="result-type">
-      <h3 className="title">{title}</h3>
-      {/*이미지 들어갈 자리*/}
+      <div className="result-img">
+        <h3 className="title">{title}</h3>
+      </div>
+
       <div>
-        <img src={resultImg} alt="resultImg" />
+        <img className="result-type-img" src={resultImg} alt="resultImg" />
       </div>
       <div>
         <h1 className="sub-title">내 성향은?</h1>

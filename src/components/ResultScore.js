@@ -25,7 +25,6 @@ const ResultScore = ({ resultType }) => {
         style={{
           marginTop: '50px',
           paddingTop: '10px',
-          paddingBottom: '30px',
           // border: '10px solid beige',
           // borderRadius: '5px',
         }}
@@ -41,13 +40,21 @@ const ResultScore = ({ resultType }) => {
         </h1>
         <h2
           style={{
-            marginBottom: '30px',
             fontWeight: '800',
-            fontSize: '2rem',
+            fontSize: '5rem',
+            color: 'orange',
           }}
         >
-          {scoreResult} %{' '}
+          {scoreResult}
+          <span
+            style={{
+              fontSize: '4rem',
+            }}
+          >
+            %
+          </span>
         </h2>
+
         <div>
           {/*<div*/}
           {/*  style={{*/}
