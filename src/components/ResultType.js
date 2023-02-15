@@ -1,4 +1,7 @@
 import React from 'react';
+import r1Img from '../assets/result-1.png';
+import r2Img from '../assets/result-2.png';
+import r3Img from '../assets/result-3.png';
 
 const ResultType = ({ resultType }) => {
   const resultMsg = {
@@ -49,20 +52,27 @@ const ResultType = ({ resultType }) => {
   };
 
   let num = 0;
+  let resultImg;
+
+  // test
+  // resultType = 'c';
 
   switch (resultType) {
     case 'a':
       num = 0;
+      resultImg = r1Img;
       break;
     case 'b':
       num = 1;
+      resultImg = r2Img;
       break;
     case 'c':
       num = 2;
+      resultImg = r3Img;
       break;
   }
   // test
-  //num = 2;
+  // num = 2;
 
   let title = resultMsg[num].title;
   let content = resultMsg[num].content;
@@ -72,7 +82,9 @@ const ResultType = ({ resultType }) => {
     <div className="result-type">
       <h3 className="title">{title}</h3>
       {/*이미지 들어갈 자리*/}
-      <div style={{ margin: '100px' }}>img</div>
+      <div>
+        <img src={resultImg} alt="resultImg" />
+      </div>
       <div>
         <h1 className="sub-title">내 성향은?</h1>
         <div className="result-box">
