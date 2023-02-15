@@ -92,6 +92,22 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    .adult-button-life {
+      font-size: 1.1rem;
+
+      a {
+        height: 50px;
+        padding-top: 25px;
+        padding-bottom: 0;
+      }
+    }
+    .adult-button-oz {
+      font-size: 1.1rem;
+      line-height: 1.4rem;
+      a {
+        padding-top: 12px;
+      }
+    }
   }
 }
 
@@ -202,7 +218,7 @@
 // Result type
 .result-type {
   .result-img {
-    background-image: url("../assets/result-title.png");
+    background-image: url('../assets/result-title.png');
     background-position: center;
     background-size: 550px;
     height: 200px;
@@ -229,7 +245,8 @@
     line-height: 1.5rem;
 
     .result-detail {
-      padding: 20px 0;
+      padding: 20px 20px;
+      line-height: 2rem;
       font-size: 0.9rem;
       font-family: 'TmoneyRoundWindExtraBold';
     }
@@ -237,12 +254,21 @@
 }
 @media (max-width: 500px) {
   .result-type {
-    .result-detail {
-      .result-detail-text {
-        padding: 2px 18px;
-        font-size: 12px;
+    .result-img {
+      background-size: 343px;
+      .title {
+        font-size: 0.9rem;
       }
     }
+    .result-box {
+      .result-detail {
+        padding: 22px;
+        .result-detail-text {
+          font-size: 12px;
+        }
+      }
+    }
+
     .result-type-img {
       width: 300px;
     }

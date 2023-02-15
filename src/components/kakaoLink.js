@@ -44,5 +44,5 @@ export default function KakaoShare() {
     }
   };
 
-  return <button onClick={kakaoButton}>KakaoShare</button>;
+  return <button onClick={kakaoButton}>카카오톡 공유하기</button>;
 }

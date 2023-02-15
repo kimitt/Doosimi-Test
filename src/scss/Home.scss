@@ -4,7 +4,7 @@ $bg-color: rgba(254, 255, 205, 1);
 
 .container {
   background-color: $bg-color;
-  width: 100vw !important;
+  width: 100vw;
   height: 100vh;
   margin: 0;
   .home-container {
@@ -44,6 +44,7 @@ $bg-color: rgba(254, 255, 205, 1);
     position: absolute;
     bottom: 0;
     padding: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -51,6 +52,12 @@ $bg-color: rgba(254, 255, 205, 1);
 @include mobile {
   .container {
     height: 750px;
+    .team-info {
+      display: flex;
+      justify-content: center;
+      max-width: 500px;
+      margin: 0 auto;
+    }
   }
 }
 

@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family: 'TmoneyRoundWindExtraBold';
+  font-family: 'HSYuji-Regular';
   margin: 0 auto;
 
   .team-box {
@@ -18,6 +18,13 @@
       text-align: center;
       font-size: 1.8rem;
       margin-top: 20px;
+      p {
+        font-family: 'TmoneyRoundWindExtraBold';
+        color: rgb(81, 81, 81);
+        margin-top: 10px;
+        font-size: 0.8rem;
+        line-height: 1rem;
+      }
     }
     .team-info-box {
       width: 100%;
@@ -76,6 +83,10 @@
         width: 100%;
         padding: 10px;
         text-align: center;
+        p {
+          font-size: 0.6rem;
+          line-height: 0.5rem;
+        }
       }
       .team-info-box {
         display: flex;
