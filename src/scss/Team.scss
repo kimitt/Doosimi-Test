@@ -1,0 +1,89 @@
+@import './mixin';
+
+.team-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'TmoneyRoundWindExtraBold';
+  margin: 0 auto;
+  .team-box {
+    max-width: 500px;
+    margin: 0 auto;
+
+    .team-title {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+    .team-info-box {
+      width: 500px;
+
+      .team-info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: rgb(226, 225, 255);
+        img {
+          padding-top: 20px;
+          width: 150px;
+          margin-bottom: 15px;
+        }
+        p {
+          padding: 5px;
+          margin: 0;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+          padding: 10px;
+          border: 2px solid black;
+          border-radius: 10px;
+          margin: 20px 0;
+          background-color: rgba(176, 210, 112, 1);
+        }
+      }
+    }
+  }
+}
+
+// 미디어쿼리
+@include mobile {
+  .team-container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    .team-box {
+      width: 300px;
+      margin: 0 auto;
+      .team-title {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+      }
+      .team-info-box {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .team-info {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .container {
+    height: 800px;
+  }
+}
+
+// @include desktop {
+// }

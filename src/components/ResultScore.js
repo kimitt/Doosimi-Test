@@ -6,13 +6,13 @@ const ResultScore = ({ resultType }) => {
   let scoreResult;
 
   switch (resultType) {
-    case 'A':
+    case 'a':
       scoreResult = scoreList[0];
       break;
-    case 'B':
+    case 'b':
       scoreResult = scoreList[2];
       break;
-    case 'C':
+    case 'c':
       scoreResult = scoreList[1];
       break;
   }

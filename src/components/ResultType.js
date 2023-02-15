@@ -7,10 +7,10 @@ const ResultType = ({ resultType }) => {
       content:
         '현실적이고 신중하며 성실한 성격을 가진 당신!!\n\n' +
         '당신과 비슷한 성향을 보인 개발자는 정해진 원칙과 계획에 따라\n 분명하고, 체계적으로 일하기를 좋아해요.\n\n' +
-        '그래서 기계를 조작하거나, 계산적인 능력을 발휘하는데 흥미가 있어요!\n\n' +
+        '그래서 기계를 조작하거나, \n계산적인 능력을 발휘하는데 흥미가 있어요!\n\n' +
         '새로운 기계, 기술 트랜드를 공부하는 성향은\n 반도체, 로봇, 네트워크, 임베디드 개발 직무에 관심도가 크기에\n' +
         '클라우드 개발자, 임베디드 개발자, 서버 개발자로 일하고 있어요!!!\n\n' +
-        '또한 계산적인 능력을 바탕으로 자료를 수집, 기록, 분석에 관심이 크기에\n' +
+        '또한 계산적인 능력을 바탕으로\n자료를 수집, 기록, 분석에 관심이 크기에\n' +
         '데이터 분석가, 데이터 과학자, 빅데이터 전문가로 일하고 있어요!!',
     },
     1: {
@@ -40,13 +40,13 @@ const ResultType = ({ resultType }) => {
   let num = 0;
 
   switch (resultType) {
-    case 'A':
+    case 'a':
       num = 0;
       break;
-    case 'B':
+    case 'b':
       num = 1;
       break;
-    case 'C':
+    case 'c':
       num = 2;
       break;
   }
@@ -55,17 +55,11 @@ const ResultType = ({ resultType }) => {
   let content = resultMsg[num].content;
 
   return (
-    <div>
+    <div className="result-type">
       <h1>나와 비슷한 성향의 개발자는?</h1>
-      <div
-        style={{
-          border: '10px solid beige',
-          padding: '15px',
-          borderRadius: '5px',
-        }}
-      >
-        <h3 style={{ marginTop: '0' }}>{title}</h3>
-        <div style={{ textAlign: 'left' }}>
+      <div className="result-box">
+        <h3>{title}</h3>
+        <div className="result-detail">
           {content.split('\n').map((line) => {
             return (
               <span>
