@@ -9,27 +9,17 @@ import '../scss/Result.scss';
 import '../components/kakaoLink';
 
 function Result({ maxData, age }) {
-  let resultAge = 1;
   let ageChecker = true; // 유아(0)인 경우 true
-  let resultType = 'A';
-  if (resultAge !== 0) {
+
+  if (age === 'F') {
     ageChecker = false;
   }
 
   return (
-    <div
-      style={{
-        width: '500px',
-        margin: '0 auto',
-        textAlign: 'center',
-        fontFamily: 'HSYuji-Regular',
-      }}
-    >
-      <div>{maxData}</div>
-      <div>{age}</div>
-      <ResultScore resultType={resultType} />
-      <ResultType resultType={resultType} />
-      {ageChecker ? <Child /> : <Adult />}
+    <div className="result">
+      <ResultScore resultType={maxData} />
+      <ResultType resultType={maxData} />
+      {ageChecker ? <Adult /> : <Child />}
       <ResultShare />
       <TestRetryButton />
     </div>

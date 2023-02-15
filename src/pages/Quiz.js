@@ -137,7 +137,7 @@ function Quiz({ getData }) {
                   <div
                     className="input-container"
                     onClick={(e) => {
-                      putValue1(index, '주민등록증 있음');
+                      putValue1(index, 'T');
                     }}
                   >
                     <div className="label-container">
@@ -154,7 +154,7 @@ function Quiz({ getData }) {
                   <div
                     className="input-container"
                     style={{ marginTop: '0px' }}
-                    onClick={(e) => putValue2(index, '주민등록증 없음')}
+                    onClick={(e) => putValue2(index, 'F')}
                   >
                     <div className="label-container">
                       <input
