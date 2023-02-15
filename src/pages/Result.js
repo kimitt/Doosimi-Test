@@ -8,7 +8,7 @@ import TestRetryButton from '../components/TestRetryButton';
 import '../scss/Result.scss';
 import '../components/kakaoLink';
 
-function Result() {
+function Result({ maxData, age }) {
   let resultAge = 1;
   let ageChecker = true; // 유아(0)인 경우 true
   let resultType = 'A';
@@ -25,6 +25,8 @@ function Result() {
         fontFamily: 'HSYuji-Regular',
       }}
     >
+      <div>{maxData}</div>
+      <div>{age}</div>
       <ResultScore resultType={resultType} />
       <ResultType resultType={resultType} />
       {ageChecker ? <Child /> : <Adult />}

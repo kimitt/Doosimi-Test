@@ -5,8 +5,8 @@ import React, { useEffect, useState } from 'react';
 import { dbFirestore } from '../fbase';
 import '../scss/Quiz.scss';
 import { useNavigate } from 'react-router-dom';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Heart from '../components/Heart';
+import { async } from '@firebase/util';
 
 function Quiz({ getData }) {
   const [quiz, setquiz] = useState([]);
@@ -19,8 +19,9 @@ function Quiz({ getData }) {
   const [b, setb] = useState([]);
   const [c, setc] = useState([]);
   const [age, setage] = useState('');
-
+  const [heart, setheart] = useState(0);
   const pickArray = [a, b, c];
+  const [progress, setProgress] = useState([]);
   // const [pickArray, setPickArray] = useState([]);
   // //데이터 받아오기
   useEffect(() => {
@@ -28,7 +29,6 @@ function Quiz({ getData }) {
       navigate('/result');
     }
   }, [c, a, b]);
-
 
   useEffect(() => {
     const q = query(collection(dbFirestore, 'quiz'));
@@ -38,7 +38,6 @@ function Quiz({ getData }) {
         ...document.data(),
         id: document.id,
       }));
-
 
       setquiz(quizArr);
     });
@@ -51,6 +50,10 @@ function Quiz({ getData }) {
   //   // }
   // }, [pickArray]);
   // //length를 배열에 담고, maxLength 선정해서 App.js로 보내주기
+  useEffect(() => {
+    console.log(progress);
+    setProgress((hello) => [0, ...hello]);
+  }, [count]);
   const handleSubmit = (e) => {
     pickArray.map((i, index) => {
       pickArrays.push(pickArray[index].length);
@@ -71,7 +74,8 @@ function Quiz({ getData }) {
   // // 선택지마다 각자 배열에 담아주기
   const putValue1 = (index, value) => {
     setCount(count + 1);
-
+    setheart(heart + 10);
+    // putProgress();
     if (index === 0) {
       setage(value);
     } else if (getKeyByValue(quiz[index], 'BC') !== undefined) {
@@ -87,7 +91,7 @@ function Quiz({ getData }) {
   };
   const putValue2 = (index, value) => {
     setCount(count + 1);
-
+    // putProgress();
     if (index === 0) {
       setage(value);
     } else if (getKeyByValue(quiz[index], 'BC') !== undefined) {
@@ -103,40 +107,68 @@ function Quiz({ getData }) {
     }
   };
 
+  // const putProgress = () => {
+  //   const array = [...progress];
+  //   array.push(0);
+  //   setProgress(array);
+  // };
+
   return (
     <>
       {quiz.map((i, index) => {
         if (count === index) {
           return (
+            // eslint-disable-next-line react/jsx-no-useless-fragment
             <>
               <div className="whole-container">
                 <div className="title-container">
-                  <p className="quiz-title">질문:{i.title}</p>
+                  <div className="real-container">
+                    <p className="quiz-title">{i.title}</p>
+                  </div>
+                </div>
+                <div className="heart-up-container">
+                  <div className="heart-container">
+                    {progress.map((_, index) => (
+                      <Heart key={index} />
+                    ))}
+                  </div>
                 </div>
                 <div className="answer-container" style={{ display: 'block' }}>
-                  <div className="fist-answer-container">
-                    <input
-                      onChange={(e) => {
-                        putValue1(index, e.target.value);
-                      }}
-                      value="주민등록증있음"
-                      type="radio"
-                      name="answer"
-                      id="1"
-                    />
-                    <label for="1">{i.first_answer}</label>
+                  <div
+                    className="input-container"
+                    onClick={(e) => {
+                      putValue1(index, '주민등록증 있음');
+                    }}
+                  >
+                    <div className="label-container">
+                      <input
+                        className="answer"
+                        value="주민등록증있음"
+                        type="radio"
+                        name="answer"
+                        id="1"
+                      />
+                      <label for="1">{i.first_answer}</label>
+                    </div>
                   </div>
-                  <div className="second-answer-container">
-                    <input
-                      onChange={(e) => {
-                        putValue2(index, e.target.value);
-                      }}
-                      value="주민등록증 없음"
-                      type="radio"
-                      name="answer"
-                      id="2"
-                    />
-                    <label for="2">{i.second_answer}</label>
+                  <div
+                    className="input-container"
+                    style={{ marginTop: '0px' }}
+                    onClick={(e) => putValue2(index, '주민등록증 없음')}
+                  >
+                    <div className="label-container">
+                      <input
+                        className="answer"
+                        // onChange={(e) => {
+                        //   putValue2(index, e.target.value);
+                        // }}
+                        // value="주민등록증 없음"
+                        type="radio"
+                        name="answer"
+                        id="2"
+                      />
+                      <label for="2">{i.second_answer}</label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -146,8 +178,6 @@ function Quiz({ getData }) {
       })}
     </>
   );
-
-
 }
 
 export default Quiz;

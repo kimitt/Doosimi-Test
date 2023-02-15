@@ -4,7 +4,7 @@ $bg-color: rgba(254, 255, 205, 1);
 
 .container {
   background-color: $bg-color;
-  width: 100vw;
+  width: 100vw !important;
   height: 100vh;
   .home-container {
     max-width: 500px;
