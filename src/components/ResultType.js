@@ -55,7 +55,7 @@ const ResultType = ({ resultType }) => {
   let resultImg;
 
   // test
-  // resultType = 'c';
+  resultType = 'c';
 
   switch (resultType) {
     case 'a':
@@ -81,9 +81,8 @@ const ResultType = ({ resultType }) => {
   return (
     <div className="result-type">
       <h3 className="title">{title}</h3>
-      {/*이미지 들어갈 자리*/}
       <div>
-        <img src={resultImg} alt="resultImg" />
+        <img className="result-type-img" src={resultImg} alt="resultImg" />
       </div>
       <div>
         <h1 className="sub-title">내 성향은?</h1>

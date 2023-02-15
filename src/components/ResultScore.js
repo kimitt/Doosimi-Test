@@ -43,11 +43,19 @@ const ResultScore = ({ resultType }) => {
           style={{
             marginBottom: '30px',
             fontWeight: '800',
-            fontSize: '2rem',
+            fontSize: '6rem',
           }}
         >
-          {scoreResult} %{' '}
+          80{' '}
+          <span
+            style={{
+              fontSize: '4rem',
+            }}
+          >
+            %
+          </span>
         </h2>
+
         <div>
           {/*<div*/}
           {/*  style={{*/}
