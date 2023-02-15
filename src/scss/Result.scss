@@ -136,6 +136,7 @@
     font-size: 1.2rem;
     font-family: 'HSYuji-Regular';
     background-color: rgb(255, 127, 101);
+    margin-bottom: 100px;
   }
 }
 
@@ -208,18 +209,29 @@
   .sub-title {
     font-size: 1.4rem;
     margin-top: 25px;
+    margin-bottom: 10px;
   }
 
   .result-box {
     border: 3px solid black;
     border-radius: 20px;
     background-color: rgb(244, 225, 255);
-    line-height: 1.3rem;
+    line-height: 1.5rem;
 
     .result-detail {
       padding: 20px 0;
       font-size: 0.9rem;
       font-family: 'TmoneyRoundWindExtraBold';
+    }
+  }
+}
+@media (max-width: 500px) {
+  .result-type {
+    .result-detail {
+      .result-detail-text {
+        padding: 2px 18px;
+        font-size: 12px;
+      }
     }
   }
 }
