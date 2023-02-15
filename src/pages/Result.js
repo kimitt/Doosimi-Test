@@ -20,6 +20,7 @@ function Result({ maxData, age }) {
       <ResultScore resultType={maxData} />
       <ResultType resultType={maxData} />
       {ageChecker ? <Adult /> : <Child />}
+      {/*<Child />*/}
       <ResultShare />
       <TestRetryButton />
     </div>

@@ -20,7 +20,7 @@ function Quiz({ getData }) {
   const [c, setc] = useState([]);
   const [age, setage] = useState('');
   const [heart, setheart] = useState(0);
-  const pickArray = [a, b, c];
+  const pickArray = [b, c, a];
   const [progress, setProgress] = useState([]);
   // const [pickArray, setPickArray] = useState([]);
   // //데이터 받아오기
@@ -58,11 +58,11 @@ function Quiz({ getData }) {
       pickArrays.push(pickArray[index].length);
 
       if (Math.max(...pickArrays) === pickArrays[0]) {
-        getData('a', age);
-      } else if (Math.max(...pickArrays) === pickArrays[1]) {
         getData('b', age);
-      } else if (Math.max(...pickArrays) === pickArrays[2]) {
+      } else if (Math.max(...pickArrays) === pickArrays[1]) {
         getData('c', age);
+      } else if (Math.max(...pickArrays) === pickArrays[2]) {
+        getData('a', age);
       }
     });
   };
