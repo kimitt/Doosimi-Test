@@ -91,85 +91,96 @@ label {
 }
 
 @media (max-width: 500px) {
-  .whole-container {
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    // height: 100%;
-    // margin: auto 0;
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-  }
-  .title-container {
-    display: flex;
-    // margin-top: 10px;
-    padding: 0px 10px;
+  .high-div {
+    height: 750px;
+    .whole-container {
+      transform: translate(-50%, -50%);
+      top: 40%;
+      left: 50%;
+      position: absolute;
+      // height: 100%;
+      // margin: auto 0;
+      display: flex;
+      overflow: hidden;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: center;
+    }
+    .title-container {
+      display: flex;
+      // margin-top: 10px;
+      padding: 0px 10px;
 
-    width: 350px;
-    height: 350px;
-    background-image: url('https://ifh.cc/g/p3n0CK.png');
-    background-repeat: no-repeat;
-    background-size: 360px;
-    display: flex;
-    justify-content: center;
+      width: 350px;
+      height: 350px;
+      background-image: url('https://ifh.cc/g/p3n0CK.png');
+      background-repeat: no-repeat;
+      background-size: 360px;
+      display: flex;
+      justify-content: center;
 
-    align-items: center;
-  }
-  .quiz-title {
-    font-family: 'HSYuji-Regular';
-    font-size: 19px;
+      align-items: center;
+    }
+    .quiz-title {
+      font-family: 'HSYuji-Regular';
+      font-size: 19px;
 
-    align-items: center;
-  }
-  .input-container {
-    // margin-left: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 100px;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    background-size: 350px;
-    background-repeat: no-repeat;
-    background-position: center;
+      align-items: center;
+    }
+    .input-container {
+      // margin-left: 10px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      height: 100px;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      background-size: 350px;
+      background-repeat: no-repeat;
+      background-position: center;
 
-    background-image: url('https://ifh.cc/g/sxCPq2.png');
-    font-family: 'HSYuji-Regular';
+      background-image: url('https://ifh.cc/g/sxCPq2.png');
+      font-family: 'HSYuji-Regular';
+    }
+    .real-container {
+      width: 240px;
+      line-height: 30px;
+    }
+    .heart-container {
+      display: flex;
+      width: 50%;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+    .heart {
+      width: 26px;
+    }
+    .heart-up-container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0px;
+
+      // margin-left: 40px;
+    }
+    // .high-div {
+    //   display: flex;
+    //   margin: auto;
+    //   border: 4px solid black;
+    //   height: 100vh;
+    // }
   }
-  .real-container {
-    width: 240px;
-    line-height: 30px;
-  }
-  .heart-container {
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
-  .heart {
-    width: 26px;
-  }
-  .heart-up-container {
-    display: flex;
+  .loading {
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0px;
-
-    // margin-left: 40px;
   }
-  // .high-div {
-  //   display: flex;
-  //   margin: auto;
-  //   border: 4px solid black;
-  //   height: 100vh;
-  // }
+  .loading-container {
+    width: 350px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
 }

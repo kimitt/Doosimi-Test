@@ -51,12 +51,21 @@ $bg-color: rgba(254, 255, 205, 1);
 // 미디어쿼리
 @include mobile {
   .container {
-    height: 750px;
+    height: 700px;
     .team-info {
       display: flex;
       justify-content: center;
       max-width: 500px;
+      height: 100%;
       margin: 0 auto;
+      a {
+        margin-bottom: 50px;
+      }
+    }
+    .button-img {
+      img {
+        margin-bottom: 50px;
+      }
     }
   }
 }

@@ -28,15 +28,9 @@ export default function KakaoShare() {
           {
             title: '웹으로 보기',
             link: {
-              mobileWebUrl: 'https://developers.kakao.com',
-              webUrl: 'https://developers.kakao.com',
-            },
-          },
-          {
-            title: '앱으로 보기',
-            link: {
-              mobileWebUrl: 'https://developers.kakao.com',
-              webUrl: 'https://developers.kakao.com',
+              mobileWebUrl:
+                'https://master--tiny-hummingbird-6448aa.netlify.app/',
+              webUrl: 'https://master--tiny-hummingbird-6448aa.netlify.app/',
             },
           },
         ],
@@ -44,5 +38,5 @@ export default function KakaoShare() {
     }
   };
 
-  return <button onClick={kakaoButton}>카카오톡 공유하기</button>;
+  return <button onClick={kakaoButton}>KakaoShare</button>;
 }

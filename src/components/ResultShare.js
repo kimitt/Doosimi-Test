@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Modal from '../components/Modal';
 import KakaoShare from './kakaoLink';
+import ClipBoard from './ClipBoard';
 
 const ResultShare = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -18,7 +19,7 @@ const ResultShare = () => {
       <button onClick={openModal}>내 결과 공유하기!</button>
       <Modal open={modalOpen} close={closeModal}>
         <KakaoShare />
-        <KakaoShare />
+        <ClipBoard />
       </Modal>
     </div>
   );

@@ -133,6 +133,19 @@
     background-color: rgba(176, 210, 112, 1);
   }
 }
+@media (max-width: 500px) {
+  .adult-container {
+    .adult-button-life {
+      a {
+        font-size: 1rem;
+      }
+    }
+    .adult-button-oz {
+      a {
+      }
+    }
+  }
+}
 
 // Test Retry
 
