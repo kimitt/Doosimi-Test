@@ -3,15 +3,16 @@ import { getAnalytics } from 'firebase/analytics';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyAi3vJiDzxNuCrtpLjnRQ6BB97Aym1jrf0',
-  authDomain: 'doosimi-test.firebaseapp.com',
-  projectId: 'doosimi-test',
-  storageBucket: 'doosimi-test.appspot.com',
-  messagingSenderId: '36907283982',
-  appId: '1:36907283982:web:a9b931f2ad1663c502ee5f',
-  measurementId: 'G-WZX2PCV1RQ',
+  apiKey: `${process.env.REACT_APP_API_KEY}`,
+  authDomain: `${process.env.REACT_APP_AUTHDOMAIN}`,
+  databaseURL: `${process.env.REACT_APP_DATABASE_URL}`,
+  projectId: `${process.env.REACT_APP_PROJECT_ID}`,
+  storageBucket: `${process.env.REACT_APP_STORAGE_BUCKET}`,
+  messagingSenderId: `${process.env.REACT_APP_MESSAGIN_ID}`,
+  appId: `${process.env.REACT_APP_APP_ID}`,
+  measurementId: `${process.env.REACT_APP_MEASUREMENT_ID}`,
 };
 
-export const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 export const analytics = getAnalytics(app);
 export const dbFirestore = getFirestore();
