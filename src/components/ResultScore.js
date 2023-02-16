@@ -15,9 +15,11 @@ const ResultScore = ({ resultType }) => {
     case 'c':
       scoreResult = scoreList[1];
       break;
+    default:
+      break;
   }
 
-  let calcScoreResult = scoreResult / 100;
+  // let calcScoreResult = scoreResult / 100;
 
   return (
     <div>
