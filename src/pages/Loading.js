@@ -9,7 +9,7 @@ const Loading = () => {
     setTimeout(() => {
       // setLoading(false);
       navigate('/result');
-    }, 3000);
+    }, 2000);
   }, []);
   // useEffect(() => {
 

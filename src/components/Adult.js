@@ -7,14 +7,14 @@ const Adult = () => {
   return (
     <div className="adult-container">
       <div className="adult-button-life">
-        <Link to="https://lifehacking.co.kr">
+        <Link to="https://lifehacking.co.kr" target="_blank">
           {/* 버튼들 클래스로 처리하기 */}
           개발로 창업을 하고 싶다면?
         </Link>
         <img src={buttonImgOne} alt="button" />
       </div>
       <div className="adult-button-oz">
-        <Link to="https://ozcodingschool.com">
+        <Link to="https://ozcodingschool.com" target="_blank">
           스타트업 개발자로 성장하고 싶다면?
         </Link>
         <img src={buttonImgTwo} alt="button" />

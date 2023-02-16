@@ -15,8 +15,9 @@ export default function KakaoShare() {
           imageUrl:
             'http://k.kakaocdn.net/dn/czbjJe/btrZa4QWPIw/xH9ngboACGCUKQ05XI5HkK/kakaolink40_original.png',
           link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            webUrl: 'https://developers.kakao.com',
+            mobileWebUrl:
+              'https://master--tiny-hummingbird-6448aa.netlify.app/',
+            webUrl: 'https://master--tiny-hummingbird-6448aa.netlify.app/',
           },
         },
         social: {

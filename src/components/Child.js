@@ -7,7 +7,7 @@ const Child = () => {
   return (
     <div className="adult-container">
       <div className="adult-button-life">
-        <Link to="http://jrcodingschool.kr">
+        <Link to="http://jrcodingschool.kr" target="_blank">
           온라인 코딩 교육 받으러 가기!
           {/*<button // 버튼들 클래스로 처리하기*/}
           {/*  style={{*/}
@@ -22,7 +22,7 @@ const Child = () => {
         <img src={buttonImgOne} alt="button" />
       </div>
       <div className="adult-button-oz">
-        <Link to="http://www.magicoding.io">
+        <Link to="http://www.magicoding.io" target="_blank">
           매력적인 코딩 마법의 세계로 떠나보기!
           {/*<button*/}
           {/*  style={{*/}
