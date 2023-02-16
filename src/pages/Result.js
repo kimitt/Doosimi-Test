@@ -9,7 +9,7 @@ import '../scss/Result.scss';
 import '../components/kakaoLink';
 
 function Result({ maxData, age }) {
-  let ageChecker = true; // 유아(0)인 경우 true
+  let ageChecker = true; // 성인 경우 true
 
   if (age === 'F') {
     ageChecker = false;
