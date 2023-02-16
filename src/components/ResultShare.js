@@ -16,7 +16,7 @@ const ResultShare = () => {
 
   return (
     <div className="result-share">
-      <button onClick={openModal}>내 결과 공유하기!</button>
+      <button onClick={openModal}>테스트 공유하기!</button>
       <Modal open={modalOpen} close={closeModal}>
         <KakaoShare />
         <ClipBoard />
