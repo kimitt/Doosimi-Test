@@ -2,7 +2,6 @@ import React from 'react';
 import r1Img from '../assets/result-1.png';
 import r2Img from '../assets/result-2.png';
 import r3Img from '../assets/result-3.png';
-import titleImg from '../assets/result-title.png';
 
 const ResultType = ({ resultType }) => {
   const resultMsg = {
@@ -80,6 +79,8 @@ const ResultType = ({ resultType }) => {
       num = 2;
       resultImg = r3Img;
       break;
+    default:
+      break;
   }
   // test
   // num = 0;
@@ -104,6 +105,7 @@ const ResultType = ({ resultType }) => {
             {content.split('\n').map((line) => {
               return <p className="result-detail-text">{line}</p>;
             })}
+            ;
           </div>
         </div>
       </div>
