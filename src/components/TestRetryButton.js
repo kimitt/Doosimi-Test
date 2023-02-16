@@ -6,7 +6,7 @@ import { faRefresh } from '@fortawesome/free-solid-svg-icons';
 const TestRetryButton = () => {
   return (
     <div className="test-retry">
-      <Link to="/ ">
+      <Link to="/all ">
         <button>전체 유형 보기</button>
       </Link>
       <Link to="/ " style={{ width: '100px' }}>

@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Quiz from './pages/Quiz';
 import Result from './pages/Result';
 import TeamPage from './pages/TeamPage';
+import All from './pages/All';
 import { useState } from 'react';
 import Loading from './pages/Loading';
 function App() {
@@ -31,6 +32,7 @@ function App() {
           element={<Result maxData={maxData} age={age} />}
         />
         <Route path="/loading" element={<Loading />} />
+        <Route path="/all" element={<All />} />
       </Routes>
     </BrowserRouter>
   );
