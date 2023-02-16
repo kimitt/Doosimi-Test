@@ -23,6 +23,11 @@ $bg-color: rgba(254, 255, 205, 1);
       width: 100%;
     }
   }
+  .count {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+  }
   .button-img {
     width: 100%;
     cursor: pointer;
@@ -61,6 +66,11 @@ $bg-color: rgba(254, 255, 205, 1);
       a {
         margin-bottom: 50px;
       }
+    }
+    .count {
+      display: flex;
+      justify-content: center;
+      margin-top: 450px;
     }
     .button-img {
       img {

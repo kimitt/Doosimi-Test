@@ -150,10 +150,11 @@
 // Test Retry
 
 .test-retry {
-  width: 250px;
+  width: 270px;
   display: flex;
-  justify-content: center;
-  margin: 20px auto;
+  justify-content: space-around;
+  // margin: 20px auto;
+  margin: 0 auto;
 
   button {
     width: 100%;
@@ -162,9 +163,22 @@
     border: 3px solid black;
     text-align: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: 'HSYuji-Regular';
     background-color: rgb(255, 127, 101);
+    margin-bottom: 100px;
+  }
+
+  .icon-box {
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 20px;
+    border: 3px solid black;
+    text-align: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-family: 'HSYuji-Regular';
+    background-color: #F2CB05;
     margin-bottom: 100px;
   }
 }
