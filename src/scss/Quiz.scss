@@ -97,6 +97,7 @@ label {
       top: 50%;
       left: 50%;
       position: absolute;
+      width: 350px;
       // height: 100%;
       // margin: auto 0;
       display: flex;
@@ -160,7 +161,7 @@ label {
     }
     .heart-up-container {
       display: flex;
-      width: 100%;
+      width: 350px;
       justify-content: center;
       align-items: center;
       margin-left: 0px;
