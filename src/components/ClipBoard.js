@@ -6,7 +6,7 @@ function ClipBoard() {
     <CopyToClipboard
       className="clipboard"
       text="https://master--tiny-hummingbird-6448aa.netlify.app/"
-      onCopy={() => console.log('클립보드에 복사되었습니다.')}
+      onCopy={() => alert('클립보드에 복사되었습니다.')}
     >
       <button>링크복사하기</button>
     </CopyToClipboard>
