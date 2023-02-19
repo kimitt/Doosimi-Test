@@ -67,13 +67,16 @@
 
     a {
       height: 40px;
-      padding: 20px 0 15px 0;
       position: absolute;
       top: 22px;
       left: 50px;
       right: 50px;
       text-decoration: none;
       color: black;
+      padding: {
+        top: 20px;
+        bottom: 15px;
+      };
 
       img {
         position: absolute;
@@ -97,8 +100,10 @@
 
       a {
         height: 50px;
-        padding-top: 25px;
-        padding-bottom: 0;
+        padding: {
+          top: 25px;
+          bottom: 0;
+        };
       }
     }
     .adult-button-oz {
@@ -128,9 +133,11 @@
     border: 3px solid black;
     text-align: center;
     align-items: center;
-    font-size: 1.2rem;
-    font-family: 'HSYuji-Regular';
     background-color: rgba(176, 210, 112, 1);
+    font: {
+      size: 1.2rem;
+      family: 'HSYuji-Regular';
+    };
   }
 }
 @media (max-width: 500px) {
@@ -163,10 +170,12 @@
     border: 3px solid black;
     text-align: center;
     align-items: center;
-    font-size: 1.1rem;
-    font-family: 'HSYuji-Regular';
     background-color: rgb(255, 127, 101);
     margin-bottom: 100px;
+    font: {
+      size: 1.1rem;
+      family: 'HSYuji-Regular';
+    };
   }
 
   .icon-box {
@@ -176,10 +185,12 @@
     border: 3px solid black;
     text-align: center;
     align-items: center;
-    font-size: 1.1rem;
-    font-family: 'HSYuji-Regular';
     background-color: #F2CB05;
     margin-bottom: 100px;
+    font: {
+      size: 1.1rem;
+      family: 'HSYuji-Regular';
+    };
   }
 }
 
@@ -212,10 +223,12 @@
       top: 15px;
       right: 15px;
       text-align: center;
-      font-size: 2rem;
-      font-weight: 700;
       color: #000000;
       background-color: transparent;
+      font: {
+        size: 2rem;
+        weight: 700;
+      };
     }
 
     button {
@@ -245,24 +258,30 @@
 // Result type
 .result-type {
   .result-img {
-    background-image: url('../assets/result-title.png');
-    background-position: center;
-    background-size: 550px;
     height: 200px;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: {
+      image: url('../assets/result-title.png');
+      position: center;
+      size: 550px;
+      repeat: no-repeat;
+    };
   }
   .title {
-    font-size: 1.3rem;
-    font-family: 'TmoneyRoundWindExtraBold';
+    font: {
+      size: 1.3rem;
+      family: 'TmoneyRoundWindExtraBold';
+    };
   }
 
   .sub-title {
     font-size: 1.4rem;
-    margin-top: 25px;
-    margin-bottom: 10px;
+    margin: {
+      top: 25px;
+      bottom: 10px;
+    };
   }
 
   .result-box {
@@ -274,8 +293,10 @@
     .result-detail {
       padding: 20px 20px;
       line-height: 2rem;
-      font-size: 0.9rem;
-      font-family: 'TmoneyRoundWindExtraBold';
+      font: {
+        size: 0.9rem;
+        family: 'TmoneyRoundWindExtraBold';
+      };
     }
   }
 }
