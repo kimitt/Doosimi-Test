@@ -19,19 +19,32 @@ function Result({ maxData, age }) {
 
   let options = {
     anchors: ['sectionOne', 'sectionTwo', 'sectionThree'],
+    arrowNavigation: true,
+    navigation: false,
   };
+  function downBtn() {
+    console.log('hi');
+  }
 
   return (
     <SectionsContainer {...options}>
       <div className="result">
         <Section>
+          <ResultTypeImgPart resultType={maxData} />
           <ResultScore resultType={maxData} />
-          <ResultTypeImgPart resultType={maxData}></ResultTypeImgPart>
+          <a className="scrollDown" href="">
+            <span></span>
+          </a>
         </Section>
         <Section>
           <ResultType resultType={maxData} />
+          <div className="margin-scroll"></div>
+          <a className="scrollDown" href="">
+            <span></span>
+          </a>
         </Section>
         <Section>
+          <div className="adult-child-mt"></div>
           {ageChecker ? <Adult /> : <Child />}
           {/*<Child />*/}
           <ResultShare />

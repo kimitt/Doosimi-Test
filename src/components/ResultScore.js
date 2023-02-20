@@ -25,7 +25,6 @@ const ResultScore = ({ resultType }) => {
     <div>
       <div
         style={{
-          marginTop: '50px',
           paddingTop: '10px',
           // border: '10px solid beige',
           // borderRadius: '5px',
@@ -46,7 +45,7 @@ const ResultScore = ({ resultType }) => {
               color: 'orange',
             }}
           >
-            {scoreResult}90
+            {scoreResult} 90
           </span>
           <span
             style={{

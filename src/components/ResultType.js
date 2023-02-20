@@ -83,7 +83,7 @@ const ResultType = ({ resultType }) => {
   return (
     <div className="result-type">
       <div>
-        <h1 className="sub-title">내 성향은?</h1>
+        <h1 className="sub-title sub-title-1">내 성향은?</h1>
         <div className="result-box">
           <div className="result-detail">
             {content.split('\n').map((line) => {
