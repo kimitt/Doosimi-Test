@@ -39,3 +39,6 @@
 
 ### 배포 - 개발자 유형 테스트 하기
 [혹시 나도 개발자?](https://tiny-hummingbird-6448aa.netlify.app/)
+
+### 5팀 회고
+[회고 링크](https://kimitt.tistory.com/59)
